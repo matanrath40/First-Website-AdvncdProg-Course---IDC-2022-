@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Bowlby+One+SC&family=Courier+Prime:wght@400;700&display=swap");
+
+/* General Settings */
+
+.section {
+	text-align: center;
+	overflow: hidden;
+	min-height: auto;
+}
+
+body * {
+  box-sizing: border-box;
+  position: relative;
+  font-family: Bowlby One;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* Header */
+.header {
+  background-color: #e2e2e2;
+  padding: 1%;
+}
+
+.btn {
+  font-family: Bowlby One;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 7px 20px 10px;
+  align-items: center;
+}
+
+.btn:hover {
+  background: #eca9be;
+}
+
+.btn .icon {
+  margin-bottom: -2px;
+  display: inline;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-grow: 2;
+  justify-content: space-evenly;
+  font-family: "Courier New", Courier, monospace;
+  margin: auto;
+}
+
+.contact-list-item {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+  text-align: center;
+  font: normal normal bold 31px/23px Courier New;
+  letter-spacing: -0.03px;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+/* Player */
+.center {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  bottom: 0px;
+  left: 60px;
+}
+
+.box {
+  z-index: 1;
+  width: 74px;
+  height: 74px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 37px 0px 37px 74px;
+  border-color: transparent transparent transparent #cf152d;
+  transition: all 100ms ease-in-out;
+}
+
+.pause {
+  border-style: double;
+  border-width: 0px 0px 0px 60px;
+}
+
+/* MATAN */
+
+#matan {
+  text-align: center;
+  font: normal normal normal 97px/80px Bowlby One SC;
+  letter-spacing: -0.1px;
+  color: #c90000;
+  text-transform: capitalize;
+  opacity: 1;
+  position: relative;
+}
+
+#matan > h1 {
+  font-family: Bowlby One SC;
+  margin-top: -17vw;
+  color: #cf152d;
+  font-size: 140px;
+  transition: 0.3s ease;
+}
+
+#matan > h2 {
+  font-family: Bowlby One SC;
+  margin-bottom: 17vw;
+  color: #cf152d;
+  font-size: 67px;
+  transition: 0.3s ease;
+}
+
+#matan h1:hover {
+  transition: 0.3s ease;
+  transform: scale(1.2);
+}
+
+#baby-matan-img {
+  opacity: 0.3;
+  /* position: absolute; */
+  width: 30%;
+}
+
+#baby-matan-img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* Hobbies */
+
+#hobbies {
+  padding: 5%;
+  background: #efefef 0% 0% no-repeat padding-box;
+  text-align: center;
+  overflow: hidden;
+}
+
+#hobbies > h1 {
+  font-family: Bowlby One SC;
+  color: #cf152d;
+  font-size: 140px;
+}
+
+.hobbies-list {
+  display: flex;
+  justify-content: space-evenly;
+  font: Bowlby One;
+  font-size: 100px;
+  letter-spacing: -0.09px;
+  /* color: #cf152d; */
+  /* -webkit-text-fill-color: transparent; */
+  color: inherit;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #cf152d;
+}
+
+.hobbies-item {
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+
+/* About me */
+#about {
+  margin-top: 10%;
+}
+
+#matan-pic {
+  display: block;
+  margin: 0 auto;
+  opacity: 0.4;
+}
+
+.about-me-wrapper {
+  margin-top: -22vw;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.about-me {
+  text-align: center;
+  font: Courier New;
+  letter-spacing: -0.03px;
+  color: #252525;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+/* Education & Employment */
+
+#edu-emp {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 10vw;
+}
+
+#edu-emp h3 {
+  font-size: 70px;
+  color: #cf152d;
+}
+
+#edu-emp ul > li {
+  font: normal normal bold 31px/23px Courier New;
+  line-height: 1.2;
+}
+
+li > ul {
+  margin-left: 20px;
+}
+
+#employment {
+  align-self: flex-end;
+}
+
+/* Contact Me */
+
+#contact {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#contact h3 {
+  font: normal normal normal 97px/80px Bowlby One SC;
+  color: #c90000;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  margin: 40px 15%;
+}
+
+input[type="text"] {
+  float: left;
+  width: 100%;
+  height: 4vw;
+  margin: 8px 0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 3px solid #cf152d;
+
+  font-family: Bowlby One SC;
+  font-size: 30px;
+  color: #252525;
+  padding-left: 10px;
+}
+
+input[type="text"]::placeholder {
+  font-family: Bowlby One SC;
+  font-size: 30px;
+  color: #c90000;
+  text-transform: capitalize;
+  opacity: 0.28;
+  padding-left: 10px;
+}
+
+/* input[type="email"] {
+  float: left;
+  width: 100%;
+  height: 4vw;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 3px solid #cf152d;
+  font-family: Bowlby One SC;
+  font-size: 30px;
+  color: #252525;
+  padding-left: 10px;
+}
+
+input[type="email"]::placeholder {
+  font-family: Bowlby One SC;
+  font-size: 30px;
+  color: #c90000;
+  text-transform: capitalize;
+  opacity: 0.28;
+  padding-left: 10px;
+} */
+
+.inputs {
+  padding-right: 10px;
+}
+
+input[type="submit"] {
+  width: 10%;
+  background: #c90000 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  font: normal normal normal 20px Bowlby One SC;
+  color: #efefef;
+}
+
+input[type="submit"]:hover {
+  background: #efefef;
+  border: 2px solid #c90000;
+  color: #c90000;
+}
+
+#inputError {
+  display: none;
+}
+
+/* Footer */
+#credits {
+  /* height: 50px; */
+  background-color: #b17f8c;
+  /* display: flex; */
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
+  align-items: center;
+  color: #ffffff;
+  font-family: "Courier Prime";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+
+#credits a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+#credits .twitter-link:hover {
+  color: #1da1f2;
+}
+
+#credits .facebook-link:hover {
+  color: #4267b2;
+}
+
+#credits .instagram-link:hover {
+  color: #f56040;
+}
+
+#credits p {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+#credits i {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* Hamburger */
+
+/* mobile */
+.navbar.mobile {
+  display: none;
+}
+
+#hamburger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#hamburger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #cf152d;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+#hamburger span:nth-child(2),#hamburger span:nth-child(3) {
+  top: 10px;
+}
+
+#hamburger span:nth-child(4) {
+  top: 20px;
+}
+
+#hamburger.open span:nth-child(1) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+#hamburger.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#hamburger.open span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+#hamburger-open {
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#hamburger-open {
+  display: none;
+}
+
+
+@media screen and (max-width: 767px) {
+  
+  /* Header */
+ 
+
+  .header {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    /* display: none; */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-list a {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .contact-list-item {
+    display: block;
+  }
+
+  .btn {
+		font-size: 11px;
+		margin-top: 5px;
+	}
+
+  /* Player */
+
+  .box {
+    display: none;
+  }
+
+  .center {
+    display: none;
+  }
+
+  /* MATAN */
+  
+  #baby-matan-img {
+    width: 60%;
+		margin-top: 20px;
+    margin-bottom: -57px;
+  }
+
+  #matan h1 {
+    font-size: 45px;
+    /* z-index: 1; */
+    /* margin-top: 0px; */
+  }
+
+  #matan h2 {
+    font-size: 25px;
+  }
+
+  /* Hobbies */
+
+  #hobbies h1 {
+    font-size: 45px;
+  }
+
+  #hobbies li {
+    font-size: 50px;
+  }
+
+  /* About Me */
+  #about img {
+    width: 80%;
+  }
+
+  .about-me-wrapper {
+    padding: 10px;
+    margin-top: -200px;
+  }
+
+  #about p {
+    font-size: 6px;
+  }
+
+  /* Education & Employment */
+  #edu-emp {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #edu-emp h3 {
+    font-size: 35px;
+  }
+
+  #edu-emp ul li {
+    font-size: 15px;
+    text-align: left; 
+  }
+
+  #employment {
+    align-self: center;
+  }
+
+  /* Contact Me */
+  #contact h3 {
+    font-size: 35px;
+  }
+
+  #contact input[type="text"] {
+    height: 10vw;
+    /* font-size: 10px; */
+  }
+
+  #contact input[type="text"]::placeholder {
+    font-size: 25px;
+  }
+
+  #contact input[type="submit"] {
+    width: 50%;
+  }
+
+  /* Footer */
+  #credits {
+    font-size: 8px;
+  }
+
+  #credits i {
+    font-size: 14px;
+  }
+
+  .navbar.desktop {
+    display: none;
+  }
+
+  .navbar.mobile {
+    display: block;
+  }
+
+}
+
+
